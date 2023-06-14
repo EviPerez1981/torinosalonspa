@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torino Salon & Spa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Torino Salon & Spa</h1>
+    <img src="logo.png" alt="Logo Torino Salon & Spa" class="banner">
+    <p>Ernesto Thom - Asesor y Peluquero Graduado en Europa</p>
+    <p>Técnicas de color, iluminación, cortes, barbería, estética y más</p>
+  </header>
+
+  <section class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="service-card">
+      <img src="servicio1.jpg" alt="Servicio 1">
+      <h3>Técnicas de Color</h3>
+      <p>¡Descubre nuestras técnicas de coloración para un cambio de imagen increíble!</p>
+    </div>
+    <div class="service-card">
+      <img src="servicio2.jpg" alt="Servicio 2">
+      <h3>Cortes de Barbería</h3>
+      <p>Experimenta la atención y precisión en nuestros cortes de barbería de alta calidad.</p>
+    </div>
+    <div class="service-card">
+      <img src="servicio3.jpg" alt="Servicio 3">
+      <h3>Tratamientos de Estética</h3>
+      <p>Relájate y renueva tu piel con nuestros tratamientos de estética personalizados.</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Galería de Imágenes</h2>
+    <div class="image">
+      <img src="imagen1.jpg" alt="Imagen 1">
+    </div>
+    <div class="image">
+      <img src="imagen2.jpg" alt="Imagen 2">
+    </div>
+    <div class="image">
+      <img src="imagen3.jpg" alt="Imagen 3">
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Reserva una Cita</h2>
+    <p>¡Reserva tu cita ahora mismo para disfrutar de nuestros servicios de calidad!</p>
+    <form action="procesar_reserva.php" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="servicio">Servicio:</label>
+      <select id="servicio" name="servicio">
+        <option value="corte_damas">Corte Damas</option>
+        <option value="tratamientos">Tratamientos</option>
+        <option value="maquillaje">Maquillaje</option>
+        <option value="decoloracion">Decoloración</option>
+        <option value="plancha_blower">Plancha y Blower</option>
+        <option value="corte_caballeros">Corte Caballeros</option>
+        <option value="tratamiento_estetico">Tratamiento Estético</option>
+    </select>
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+  
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora" required>
+  
+    <label for="mensaje">Mensaje adicional:</label>
+    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+  
+    <div class="button-container">
+      <input type="submit" value="Reservar">
+    </div>
+  </form>
+  
+  <div class="contact-links">
+    <p>También puedes contactarnos a través de:</p>
+    <a href="https://www.instagram.com/torinosalonspa" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/torinosalonspa" target="_blank">Facebook</a>
+    <a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP" target="_blank">WhatsApp</a>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2023 Torino Salon & Spa. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>  
